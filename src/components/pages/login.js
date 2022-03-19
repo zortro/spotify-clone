@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Logo from '../assets/images/logo.png'
+import Logo from '../assets/images/spotifyline.png'
 
 export default function Login() {
     const [sign, choice] = useState(false)
@@ -25,7 +25,7 @@ export default function Login() {
                 <>
                         <h1 className='loginText'>Log in to continue.</h1>
                         <input placeholder='Username'/>
-                        <input placeholder='Password'/>
+                        <input placeholder='Password' type='password'/>
                         <button className='logIn'>Log In</button>
                         <div className='divider'>
                             <div className='line'/>
@@ -39,6 +39,7 @@ export default function Login() {
             ) : (
                 <>
                         <h1 className='loginText'>Sign up to continue.</h1>
+                        <input placeholder='Email'/>
                         <input placeholder='Username'/>
                         <input placeholder='Password'/>
                         <button className='logIn'>Sign Up</button>
